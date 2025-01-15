@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstation </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav id="nav-categorias">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul id="menu" class="hidden">
+            <li><a href="#todas"  clonclick="filtrarCatalogo('todas')">Todas</a></li>
+            <li><a href="#human" onclick="filtrarCatalogo('human')">human</a></li>
+            <li><a href="#new era" onclick="filtrarCatalogo('new era')">new era</a></li>
+            <li><a href="#beisbolera" onclick="filtrarCatalogo('beisbolera')">beisbolera</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portada -->
+    <section id="portada" class="portada">
+        <div class="portada-contenido">
+            <h1>Bienvenido Capstation</h1>
+            <p>no eres feo solo te falta una gorra</p>
+            <button onclick="irAlCatalogo()">Ver Catálogo</button>
+        </div>
+    </section>
+
+    <!-- Título del Catálogo -->
+    <section id="titulo-catalogo" class="titulo-catalogo">
+        <h2>Gorras</h2>
+    </section>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="catalogo">
+        <!-- Producto 1 -->
+        <div class="producto" data-categoria="human, todas">
+            <img src="gorra1.jpg" alt="Gorra human">
+            <div class="info">
+                <h3>human</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Roja')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto" data-categoria="human">
+            <img src="gorra2.jpg" alt="Gorra human">
+            <div class="info">
+                <h3>human</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto" data-categoria="human">
+            <img src="gorra3.jpg" alt="Gorra human">
+            <div class="info">
+                <h3>human</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Azul')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="human">
+            <img src="gorra4.jpg" alt="Gorra human">
+            <div class="info">
+                <h3>human</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="human">
+            <img src="gorra5.jpg" alt="Gorra human">
+            <div class="info">
+                <h3>human</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="human">
+            <img src="gorra6.jpg" alt="Gorra human">
+            <div class="info">
+                <h3>human</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="negra">
+            <img src="gorra7.jpg" alt="gorra versace">
+            <div class="info">
+                <h3>versace</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="new era">
+            <img src="gorra8.jpg" alt="new era">
+            <div class="info">
+                <h3>new era</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="gucci">
+            <img src="9.jpg" alt="gucci">
+            <div class="info">
+                <h3>gucci</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="new era">
+            <img src="10.jpg" alt="new era">
+            <div class="info">
+                <h3>new era</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="new era">
+            <img src="11.jpg" alt="new era ">
+            <div class="info">
+                <h3>new era</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+        <div class="producto" data-categoria="new era">
+            <img src="12.jpg" alt="new era">
+            <div class="info">
+                <h3>new era</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+        </div>
+
+        <div class="producto" data-categoria="new era">
+            <img src="13.jpg" alt="new era">
+            <div class="info">
+                <h3>new era </h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="new era ">
+            <img src="14.jpg" alt="new era">
+            <div class="info">
+                <h3>new era</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="negra">
+            <img src="15.jpg" alt="Gorra Negra">
+            <div class="info">
+                <h3>gucci black</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="negra">
+            <img src="16.jpg" alt="Gorra Negra">
+            <div class="info">
+                <h3>gucci</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="negra">
+            <img src="17.jpg" alt="Gorra Negra">
+            <div class="info">
+                <h3>UH</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="negra">
+            <img src="18.jpg" alt="Gorra Negra">
+            <div class="info">
+                <h3>porche</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="negra">
+            <img src="19.jpg" alt="Gorra Negra">
+            <div class="info">
+                <h3>california</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+        <div class="producto" data-categoria="negra, ">
+            <img src="20.jpg" alt="Gorra Negra">
+            <div class="info">
+                <h3>boss</h3>
+                <p>$45</p>
+                <button onclick="comprar('Gorra Negra, ')">Comprar en WhatsApp</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Negocio de Gorras. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

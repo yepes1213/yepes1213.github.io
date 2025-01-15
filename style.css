@@ -1,0 +1,212 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #ffffff; /* Texto en blanco para mejor contraste */
+}
+
+/* Menú de navegación con Flexbox */
+#nav-categorias {
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: relative; /* Para colocar el botón de hamburguesa */
+}
+
+#nav-categorias ul {
+    display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+#nav-categorias li {
+    margin: 0 30px; /* Aumenta el espacio entre los elementos de la lista */
+}
+
+#nav-categorias a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px; /* Aumenta el padding para darle más espacio a los enlaces */
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Estilo para el botón de hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: rgb(79, 75, 75);
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Estilo para el menú oculto */
+.hidden {
+    display: none;
+}
+
+/* Estilo para mostrar el menú */
+#menu.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de la Portada */
+.portada {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.portada h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.portada p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.portada button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.portada button:hover {
+    background-color: #1da851;
+}
+
+/* Estilo del Catálogo */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #000;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 15px;
+    text-align: center;
+}
+
+.info h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.info p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.info button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info button:hover {
+    background-color: #1da851;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #454040;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Estilos Responsivos para Pantallas Pequeñas */
+@media (max-width: 768px) {
+    /* Ocultar el menú por defecto en pantallas pequeñas */
+    #nav-categorias ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Mostrar el botón de hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mostrar el menú cuando tenga la clase 'visible' */
+    #menu.visible {
+        display: flex;
+    }
+
+    /* Cambiar el diseño de los enlaces en el menú para móviles */
+    #nav-categorias a {
+        padding: 15px 20px;
+        font-size: 1.5rem;
+    }
+
+    /* Estilos para el catálogo en pantallas pequeñas */
+    .catalogo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .producto {
+        font-size: 1rem;
+    }
+}
